@@ -24,7 +24,7 @@ header img {
 
 .title {
     margin-left: 40px;
-    margin-right: 700px;
+    margin-right: 650px;
 }
 body {
     font-family: sans-serif;
@@ -43,6 +43,7 @@ main {
 
 /* nav-bar */
 header {
+    font-size: 1.2em;
     background-color: #ffa726;
     position: fixed;
     top: 0;
