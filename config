@@ -1,0 +1,3 @@
+[remote "origin"]
+ url = https://github.com/LucasFPO/Book-Market-Project.git
+ fetch = +refs/heads/*:refs/remotes/origin/*
