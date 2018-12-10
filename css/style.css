@@ -16,15 +16,17 @@ body {
     font-family:'Roboto', sans-serif; 
 }
 
-
+/* Logo */
 header img {
-    height: 80px;
+    height: 70px;
+    margin-left: 140px;
+}
+
+.title {
     margin-left: 40px;
+    margin-right: 700px;
 }
 body {
-    height: 125vh;
-    background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
-    background-size: cover;
     font-family: sans-serif;
      /* The nav-bar has a position of fixed, the rest of the content on the page moves up.
      This means that the main text is actually underneath our nav-bar!
@@ -35,11 +37,13 @@ body {
 }
 
 main {
-    color: white;
+    /* Text color */
+    color: black;
 }
 
+/* nav-bar */
 header {
-    background-color: white;
+    background-color: #ffa726;
     position: fixed;
     top: 0;
     left: 0;
@@ -63,15 +67,17 @@ header li {
 }
 
 header li a {
-    color: black;
+    /* nav-text color */
+    color: #212121;
     text-decoration: none;
 }
 
 /* Footer */
 footer{
-    background-color: #ffffff;
+    box-shadow: 0 0 25px 0 black;
+    background-color: #ffa726;
     text-align: center;
-    color: black; 
+    color: #212121; 
     cursor:default;
     display: flex; 
     justify-content: center;
