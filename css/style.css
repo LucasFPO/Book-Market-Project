@@ -1,0 +1,79 @@
+/* Responsive Style */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+header, nav, main, div, footer {
+    box-sizing: border-box;
+}
+
+
+/* Text font */
+body {
+    font-family:'Roboto', sans-serif; 
+}
+
+
+header img {
+    height: 80px;
+    margin-left: 40px;
+}
+body {
+    height: 125vh;
+    background-image: url('https://codetheweb.blog/assets/img/posts/style-a-navigation-bar-css/background.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+     /* The nav-bar has a position of fixed, the rest of the content on the page moves up.
+     This means that the main text is actually underneath our nav-bar!
+    To fix this, we simply need to give the body a margin-top equal to the height of the nav-bar, 80px: */
+    margin-top: 80px;
+    /* Adding padding for the text do not apper right at the end of the nav-bar */
+    padding: 30px;
+}
+
+main {
+    color: white;
+}
+
+header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    /* align items in nav-bar */
+    display: flex;
+    align-items: center;
+    /* Nav-bar shadow */
+    box-shadow: 0 0 25px 0 black;
+}
+
+/* The * means any element inside header */
+header * {
+    /* Items in nav-bar display horizontally instead of vertically default */
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Footer */
+footer{
+    background-color: #ffffff;
+    text-align: center;
+    color: black; 
+    cursor:default;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
