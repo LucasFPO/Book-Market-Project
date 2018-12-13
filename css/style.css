@@ -52,7 +52,7 @@ main {
 header {
     font-size: 1.2em;
     background-color: #ffa726;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -202,12 +202,16 @@ and falls back nicely for browsers that don’t support CSS animations (it will 
 
 
 /* Login Section */
+input:focus {
+    /* changes the default grey border of the input */
+    outline-color: #212121;
+}
 .login-form {
     background-color: #ffb74d;
     padding: 1em 0 0;
     /* "Username" and "Password" words color */
     color: #212121;
-    /*display: none;*/ 
+    display: none; 
     display: flex;
     justify-content: center;
 }
@@ -224,7 +228,7 @@ and falls back nicely for browsers that don’t support CSS animations (it will 
 
 /* Type Section (Area where the user must type) */
 .login-form input {
-    /*width: calc(100% - 1em); */
+    width: calc(100% - 1em); /* If I remove the width the input size will be short */
     border: none;
 /* Height of the input area (White bar)*/
     height: 2em;
@@ -241,7 +245,7 @@ and falls back nicely for browsers that don’t support CSS animations (it will 
     font-weight: 700;
     letter-spacing: 0.1em;
     text-align: center;
-      /* width: 100%; */
+    width: 100%; /* If I remove the width, the buttons will appear side by side, next the password input */ 
 /* Height of the button */      
     height: 2.5em;
     -webkit-user-select: none;
