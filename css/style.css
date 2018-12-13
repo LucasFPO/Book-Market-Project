@@ -52,7 +52,7 @@ main {
 header {
     font-size: 1.2em;
     background-color: #ffa726;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -63,6 +63,8 @@ header {
     align-items: center;
     /* Nav-bar shadow */
     box-shadow: 0 0 25px 0 black;
+    /* Makes all the content go underneath the nav-bar */
+    z-index: 999;
 }
 
 /* The * means any element inside header */
@@ -206,6 +208,7 @@ input:focus {
     /* changes the default grey border of the input */
     outline-color: #212121;
 }
+
 .login-form {
     background-color: #ffb74d;
     padding: 1em 0 0;
@@ -236,6 +239,8 @@ input:focus {
 /* When the user type, the size letter is gonna be "1em" */
     font-size: 1em;
     padding: 0 0.5em;
+/* Reducing the space between the word "Username/or/Password" and the input area */   
+    margin-top: -12px;
 }
 
 /* "Sign IN" and "Create Account" words */
@@ -252,7 +257,11 @@ input:focus {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    cursor: pointer; }
+    cursor: pointer;
+/* The border gets messed up when reducing the space between the word "Username/or/Password" and the input area.
+   That's why I set this margin */
+    margin-top: 4px;
+}
   
     
 /* ANOTHER SECTION STARTS BELOW */
@@ -269,3 +278,4 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
