@@ -14,14 +14,32 @@ app.controller('MainController', ['$scope', function($scope) {
             // making the App more interactive
             likes: 0,
             dislikes: 0 }, 
+
             {
-              name: 'Program or be Programmed', 
-              price: 8, 
-              pubdate: new Date('2013', '08', '01'), 
-              cover: 'img/plant.jpg',
-              likes: 0,
-              dislikes: 0 } 
+            name: 'Program or be Programmed', 
+            price: 8, 
+            pubdate: new Date('2013', '08', '01'), 
+            cover: 'img/plant.jpg',
+            likes: 0,
+            dislikes: 0 },
+            
+            {
+            name: 'Program or be Programmed', 
+            price: 8, 
+            pubdate: new Date('2013', '08', '01'), 
+            cover: 'img/plant.jpg',
+            likes: 0,
+            dislikes: 0 } ,
+            
+            {
+            name: 'Program or be Programmed', 
+            price: 8, 
+            pubdate: new Date('2013', '08', '01'), 
+            cover: 'img/plant.jpg',
+            likes: 0,
+            dislikes: 0 }  
             ];
+            
     // We could add  as many books we desire in the array. The view will update
     // as the "ng-repeat" in the index.html loops the new elements
     
